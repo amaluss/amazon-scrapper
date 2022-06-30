@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container"></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="input-group input-group-lg">
+      <form class="form-control" action="/deletion">
+  <input type="text" class="form-control" aria-label="item to be deleted" aria-describedby="inputGroup-sizing-lg" name="del" placeholder="Enter item to be deleted">
+          <br>
+      <input type="submit" class="btn btn-danger justify-content-center" value="delete">
+          </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">product name</th>
+      <th scope="col">users brought</th>
+      <th scope="col">price</th>
+      <th scope="col">original price</th>
+      <th scope="col">offer</th>
+      <th scope="col">item</th>
+    </tr>
+  </thead>
+  <tbody>
+      {% for items in res %}
+        <tr>
+           <td>{{loop.index}}</td>
+            <td>{{items[1]}}</td>
+            <td>{{items[2]}}</td>
+            <td>{{items[3]}}₹</td>
+            <td>{{items[4]}}₹</td>
+            <td>{{items[5]}}</td>
+            <td>{{items[6]}}</td>
+        </tr>
+    {% endfor %}
+
+  </tbody>
+</table>
+{% endblock %}

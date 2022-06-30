@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <br>
+    <a href="/del"><button class="btn btn-danger">delete item</button></a>
+    <a href="/showall"><button class="btn btn-secondary">show all items</button></a>
+    <a href="/searchp"><button class="btn btn-secondary">search an item from database</button></a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  <div class="input-group input-group-lg">
+      <form class="form-control" action="/result">
+  <input type="text" class="form-control" aria-label="Search Key" aria-describedby="inputGroup-sizing-lg" name="search" placeholder="search keyword">
+  <input type="text" class="form-control" aria-label="Number of pages" aria-describedby="inputGroup-sizing-lg" name="pagen" placeholder="number of pages">
+          <br>
+      <input type="submit" class="btn btn-primary justify-content-center" value="Search">
+          </form>
+</div>
+    <br>
+    <br>
+    <p>
+    HINT:try not to search for generic items like 'chair' or 'pen'.they are arranged in cards and the program wont be able to scrape them as far as
+    now
+    </p>
+</div>
+{% endblock %}
