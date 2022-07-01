@@ -34,6 +34,8 @@ def result():
         return render_template('404.html',message='empty search key huh. you should know better than that')
     if page<0:
         return render_template('404.html',message='0th page...doesnt work')
+    if page>0:
+        return render_template('404.html',message='no more than 20 pages')
     if res==None:
         return render_template('404.html', message='no item to show')
     print(searchkey,page,res)
